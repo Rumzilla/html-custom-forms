@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+body {
+    background: #795cfaa6;
+}
+
+.container {
+    margin: 0 auto;
+    width: 700px;
+    border: 1px solid black;
+    background: white;
+    height: 100%;
+}
+
+.username {
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    margin: 96px 98px 32px 98px;
+}
+
+.input {
+    width: 304px;
+}
+
+.input-wrap {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.input-wrap .input {
+    outline: none;
+    display: block;
+    width: 100%;
+    border: none;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.input-wrap .label {
+    position: absolute;
+    top: -40px;
+    left: -17px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #666666;
+}
+.input::placeholder {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+}
+
+.password {
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    margin: 58px 98px 32px 98px;
+}
+.password .disclaimer {
+    position: absolute;
+    top: 40px;
+    left: -17px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #666666;
+    padding-top: 8px;
+    margin-bottom: 32px;
+}
+
+.custom-checkbox {
+    padding-top: 36px;
+    margin-bottom: 52px;
+    position: relative;
+    margin-left: 96px;
+    margin-right: 96px;
+}
+  .custom-checkbox .checkbox {
+    display: none;
+}
+  
+  .custom-checkbox .label {
+    user-select: none;
+    cursor: pointer;
+    padding-left: 41px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+}
+  .custom-checkbox .checkmark {
+    position: absolute;
+    top: 80%;
+    transform: translateY(-50%);
+    display: flex;
+    padding: 5px;
+    width: 24px;
+    height: 24px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+  }
+  .custom-checkbox .checkbox:checked ~ .checkmark{
+    background:url(./Vector.svg) center center/contain no-repeat;
+    width: 17.59;
+    height: 13.41;
+  }
+  /* toggle */
+
+  .text-toggle {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-left: 10px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+  }
+  
+  .toggle-button {
+    position: relative;
+    width: 49px;
+    height: 24px;
+    margin: 0;
+    vertical-align: top;
+    background: #ffffff;
+    border: 1px solid #CCCCCC;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    appearance: none;
+    transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+    margin-left: 98px;
+  }
+  
+  .toggle-button::after {
+    content: "";
+    
+    position: absolute;
+    left: 3px;
+    top: 1.5px;
+    
+    width: 18px;
+    height: 18px;
+    background-color: #F4F4F4;
+    border-radius: 50%;
+    
+    transform: translateX(0);
+    
+    transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+  }
+  
+  .toggle-button:checked::after {
+    transform: translateX(calc(100% + 3px));
+    background-color: #fff;  
+  }
+  
+  .toggle-button:checked {
+    background-color: #7A5CFA;
+  }
+
+/* --------radio buttons--------- */
+
+.custom-radio {
+    padding-top: 36px;
+    margin-bottom: 20px;
+    position: relative;
+    margin-left: 96px;
+    margin-right: 96px;
+}
+  .custom-radio .radio {
+    display: none;
+}
+  
+  .custom-radio .label-radio {
+    user-select: none;
+    cursor: pointer;
+    padding-left: 41px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+}
+  .custom-radio .radiomark {
+    position: absolute;
+    top: 80%;
+    transform: translateY(-50%);
+    display: block;
+    padding: 5px;
+    min-width: 24px;
+    min-height: 24px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 32px;
+    
+  }
+  .custom-radio input:checked ~ .radiomark{
+    background:url(./dot.svg) center center/cover no-repeat;
+    width: 12px;
+    height: 12px;
+  }
+  
+  .input-buttons {
+    display: flex;
+    margin: 32px 98px 514px 98px;
+    justify-content: space-between;
+  }
+  .cancel-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    width: 172px;
+    background: #FFFFFF;
+    border: 1px solid #7A5CFA;
+    border-radius: 8px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #7A5CFA;
+    cursor: pointer;
+  }
+  .next-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    width: 172px;
+    height: 56px;
+    background: #7A5CFA;
+    border-radius: 8px;
+    border: 1px solid #7A5CFA;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
